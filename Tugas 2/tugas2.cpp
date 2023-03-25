@@ -1,4 +1,3 @@
-
 #include<iostream>
 using namespace std;
 
@@ -119,8 +118,8 @@ int main(){
     cin >> x;
     cout << "Masukan Nilai f: ";
     cin >> f;
-    string faktor = (isFactor(x,f)==1) ? "Faktor" : "Bukan Faktor";
-    cout << x << " dan " << f << " Adalah " << faktor << endl;
+    string faktor = (isFactor(x,f)==1) ? "Faktorisasi" : "Bukan Faktorisasi";
+    cout << f << " adalah " << faktor << " dari " << x << endl;
     cout << "==========================================";
     int a,b;
 
@@ -130,33 +129,33 @@ int main(){
     cin >> a;
     cout << "Masukan Nilai B: ";
     cin >> b;
-    cout << "nilai yang terbesar : " << MAX(a,b) << endl;
-    cout << "nilai yang terkecil : " << MIN(a,b) << endl;
+    cout << "Nilai terbesar : " << MAX(a,b) << endl;
+    cout << "Nilai terkecil : " << MIN(a,b) << endl;
     cout << "==========================================";
 
     //sumEven Odd
     cout << " Sum Even Odd" << endl;
-    cout << "Masukkan jumlah elemen array: ";
+    cout << "Masukkan jumlah elemen arr[]: ";
     cin >> n;
     cout << endl;
     int arr[n];
     for (int i = 0; i < n; i++) {
-        cout << "Masukkan elemen array: ";
+        cout << "Masukkan elemen : ";
         cin >> arr[i];
     }
     int MaxA = maxArray(arr,n);
     int MinA = minArray(arr,n);
     int SumE = sumEven(arr,n);
     int SumO = sumOdd(arr,n);
-    cout << "Nilai Terbesar dari array: " << MaxA << endl;
-    cout << "Nilai Terkecil dari array: " << MinA << endl;
+    cout << "Nilai Terbesar array: " << MaxA << endl;
+    cout << "Nilai Terkecil array: " << MinA << endl;
     cout << "Jumlah Nilai Genap: " << SumE << endl;
     cout << "Jumlah Nilai Ganjil: " << SumO << endl;
     cout << "==========================================";
 
     //isFound
     cout << " IsFound" << endl;
-    cout << "Masukkan jumlah elemen array: ";
+    cout << "Masukkan jumlah elemen arr[]: ";
     cin >> n;
     cout << endl;
     int ar[n];
@@ -164,9 +163,9 @@ int main(){
         cout << "Masukkan angka: ";
         cin >> ar[i];
     }
-    cout << "Angka yang ingin dicari: ";
+    cout << "Angka yang dicari: ";
     cin >> x;
-    string cari = (isFound(ar,x,n)==1) ? "Angka ditemukan" : "Angka tidak ditemukan";
+    string cari = (isFound(ar,x,n)==1) ? "Ditemukan" : "Tidak ditemukan";
     cout << cari << endl;
     cout << "==========================================";
 
