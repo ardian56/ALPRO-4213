@@ -144,14 +144,14 @@ int main(){
         cout << "Masukkan elemen array: ";
         cin >> arr[i];
     }
-    int maxArr = maxArray(arr,n);
-    int minArr = minArray(arr,n);
-    int sumGenap = sumEven(arr,n);
-    int sumGanjil = sumOdd(arr,n);
-    cout << "Nilai Terbesar dari array: " << maxArr << endl;
-    cout << "Nilai Terkecil dari array: " << minArr << endl;
-    cout << "Jumlah Nilai Genap: " << sumGenap << endl;
-    cout << "Jumlah Nilai Ganjil: " << sumGanjil << endl;
+    int MaxA = maxArray(arr,n);
+    int MinA = minArray(arr,n);
+    int SumE = sumEven(arr,n);
+    int SumO = sumOdd(arr,n);
+    cout << "Nilai Terbesar dari array: " << MaxA << endl;
+    cout << "Nilai Terkecil dari array: " << MinA << endl;
+    cout << "Jumlah Nilai Genap: " << SumE << endl;
+    cout << "Jumlah Nilai Ganjil: " << SumO << endl;
     cout << "==========================================";
 
     //isFound
