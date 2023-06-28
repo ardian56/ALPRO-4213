@@ -10,17 +10,17 @@ struct sepeda{
 
 int main() {
     sepeda spd;
-    sepeda* ptrSepeda = &spd;
+    sepeda* Sepeda = &spd;
 
-    ptrSepeda->merk = "Polygon";
-    ptrSepeda->type = "Sepeda Gunung";
-    ptrSepeda->tahun = 2013;
-    ptrSepeda->harga = "2.000.000";
+    Sepeda->merk = "Polygon";
+    Sepeda->type = "Sepeda Gunung";
+    Sepeda->tahun = 2013;
+    Sepeda->harga = "2.000.000";
 
-    cout << "Merk: " << ptrSepeda->merk << endl;
-    cout << "Type: " << ptrSepeda->type << endl;
-    cout << "Tahun: " << ptrSepeda->tahun << endl;
-    cout << "Harga: " << ptrSepeda->harga << endl;
+    cout << "Merk: " << Sepeda->merk << endl;
+    cout << "Type: " << Sepeda->type << endl;
+    cout << "Tahun: " << Sepeda->tahun << endl;
+    cout << "Harga: " << Sepeda->harga << endl;
 
     return 0;
 }
