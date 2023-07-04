@@ -2,7 +2,6 @@
 #include <ctime>
 using namespace std;
 
-// Function to perform binary search
 int binarySearch(int arr[], int l, int r, int target) {
     while (l <= r) {
         int m = l + (r - l) / 2;
@@ -23,12 +22,12 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
     int target = 7;
 
-    // Start the timer
+    // timer mulai
     clock_t start = clock();
 
     int index = binarySearch(arr, 0, size - 1, target);
 
-    // End the timer
+    // timer akhir
     clock_t end = clock();
 
     double timeTaken = double(end - start) / CLOCKS_PER_SEC;
