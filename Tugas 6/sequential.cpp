@@ -17,12 +17,12 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
     int target = 7;
 
-    // Start the timer
+    // timer mulai
     clock_t start = clock();
 
     int index = sequentialSearch(arr, size, target);
 
-    // End the timer
+    // timer akhir
     clock_t end = clock();
 
     double timeTaken = double(end - start) / CLOCKS_PER_SEC;
