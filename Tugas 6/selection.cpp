@@ -34,12 +34,12 @@ int main() {
     cout << "Array Asli:\n";
     printArray(arr, size);
 
-    // Start the timer
+    // timer mulai
     clock_t start = clock();
 
     selectionSort(arr, size);
 
-    // End the timer
+    // timer akhir
     clock_t end = clock();
 
     double timeTaken = double(end - start) / CLOCKS_PER_SEC;
