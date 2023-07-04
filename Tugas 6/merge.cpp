@@ -52,7 +52,6 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-// Function to print an array
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
@@ -66,12 +65,12 @@ int main() {
     cout << "Array Asli:\n";
     printArray(arr, size);
 
-    // Start the timer
+    // timer mulai
     clock_t start = clock();
 
     mergeSort(arr, 0, size - 1);
 
-    // End the timer
+    // timer akhir
     clock_t end = clock();
 
     double timeTaken = double(end - start) / CLOCKS_PER_SEC;
